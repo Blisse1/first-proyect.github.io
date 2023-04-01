@@ -4,27 +4,25 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Web Form</title>
+    <title>Ghibli's Survey</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    
+
     <header>
         <h1 id="title">Studio Ghibli Survey Form!</h1>
         <p id="description">Thank you for taking the time to share your opinion about Studio Ghibli's films.</p>
     </header>
-
-    <div class="background-blur"></div> 
     <div>
         <main>
             <form id="survey-form">
                 <fieldset class="first">
-                    <label id="name-label"> Name: </label><input id="name" type="text" placeholder=" Enter your name"
-                        required>
-                    <label id="email-label"> Email: </label><input id="email" type="email"
+                    <label id="name-label" for="name"> Name: </label><input id="name" type="text" placeholder=" Enter your name"
+                         required>
+                    <label id="email-label" for="email"> Email: </label><input id="email" type="email"
                         placeholder=" Enter your email" required>
-                    <label id="number-label"> Your age: </label><input id="number" type="number" min="3" max="100"
+                    <label id="number-label" for="number"> Your age: </label><input id="number" type="number" min="3" max="100"
                         placeholder=" Enter your age">
                 </fieldset>
                 <fieldset class="second">
@@ -33,27 +31,28 @@
                         <option value="">Choose an option</option>
                         <option value="Yes">Yes</option>
                         <option value="No">No</option>
-                        <option value="Impossible">Impossible to select just one!</option>
+                        <option value="Undecided">Impossible to select just one!</option>
                     </select>
                 </fieldset>
 
                 <fieldset>
-                    <legend class="position">Would you recommend a studio ghibli film to a friend?</legend>
-                    <label><input type="radio" name="test"> Definitely</label>
-                    <label><input type="radio" name="test"> No</label>
+                    <legend class="position">Would you recommend a Studio Ghibli film to a friend?</legend>
+                    <label><input type="radio" name="decision" value="Definitely"> Definitely</label>
+                    <label><input type="radio" name="decision" value="Negation"> No</label>
                 </fieldset>
                 <fieldset>
                     <legend>Please select your favorite(s) Ghibli's films!</legend>
-                    <label><input type="checkbox" value="#" checked> PomPoko</label>
-                    <label><input type="checkbox" value="#"> The Wind Rises</label>
-                    <label><input type="checkbox" value="#"> When Marnie Was There</label>
-                    <label><input type="checkbox" value="#"> From Up On Puppy Hill</label>
+                    <label><input type="checkbox" value="first-film" checked> PomPoko</label>
+                    <label><input type="checkbox" value="second-film"> The Wind Rises</label>
+                    <label><input type="checkbox" value="third-film"> When Marnie Was There</label>
+                    <label><input type="checkbox" value="fourth-film"> From Up On Puppy Hill</label>
                 </fieldset>
                 <p>Any comments or suggestions?</p>
-                <textarea rows="8" placeholder="Enter your comment here"></textarea>
+                <textarea rows="8" placeholder=" Enter your comment here"></textarea>
                 <button id="submit" type="submit">Submit</button>
             </form>
         </main>
+
     </div>
 </body>
 
