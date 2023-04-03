@@ -26,7 +26,7 @@ div {
     border-radius: 15px;
     padding: 30px 40px 0;
     max-width: 600px;
-    min-width: 400px;
+    min-width: 200px;
     backdrop-filter: blur(20px);
 }
 
